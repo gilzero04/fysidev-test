@@ -1,25 +1,58 @@
-# fysidev
-Fysidea Development Projects
+##### fysidev
+#### Fysidea Development Projects
 
-## Linuxkit Command
-## Linuxkit include sudo, nano, curl
-#get linux version
-uname -r
+### First Open Docker Terminal change bash
+# bash or zsh
 
-#Change root password
-sudo passwd root
+### Linuxkit Command
+### Linuxkit include sudo, nano, curl
+## get linux version
+# uname -r
 
-#Add user
-sudo adduser username?
+## Change root password
+# sudo passwd root
 
-#Delete user
-sudo deluser --remove-home username?
+## Add user
+# sudo adduser username?
 
-#Add user to group sudo
-sudo usermod -aG sudo username?
+## Delete user
+# sudo deluser --remove-home username?
 
-#Get user in groups
-getent group
+## Add user to group sudo
+# sudo usermod -aG sudo username?
 
-#Change bash to zsh 
-sudo chsh -s $(which zsh)
+## Get user in groups
+# getent group
+
+## Change bash to zsh 
+# sudo chsh -s $(which zsh)
+
+### Install NVM(Node Version Manager)
+## 1.Download install_nvm.sh
+# curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh -o install_nvm.sh
+
+## 2.Run the install script
+# sudo bash install_nvm.sh
+
+## 3.Add below text to .bashrc and .zshrc
+# export NVM_DIR="$HOME/.nvm"
+#  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+## 4.Restart your terminal 
+# exec command : zsh or bash for switch bash
+
+## 5.Verify it worked
+# command -v nvm
+
+## 6.Test nvm
+# nvm -ls
+
+## 7.Install node
+# nvm install node -->install node last version
+# nvm install --lts -->install node last LTS release
+# nvm install 16 -->install node version 16
+
+## 8.Set node defualt version 
+# nvm use 18 --> Set node 18 to default
+# nvm use --lts -->Use the latest LTS version
