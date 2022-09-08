@@ -48,11 +48,14 @@
 ## 6.Test nvm
 # nvm -ls
 
-## 7.Install node
+## 7.Set node defualt
+# nvm alias default 18
+
+## 8.Install node
 # nvm install node -->install node last version
 # nvm install --lts -->install node last LTS release
 # nvm install 16 -->install node version 16
 
-## 8.Set node defualt version 
+## 9.Set node defualt version 
 # nvm use 18 --> Set node 18 to default
 # nvm use --lts -->Use the latest LTS version
